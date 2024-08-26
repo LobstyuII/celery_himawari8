@@ -1,0 +1,34 @@
+2024-08-21 10:01:45,410 - __main__ - INFO - 任务开始于 2024-08-21 10:01:45
+2024-08-21 10:01:45,423 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:05:08,606 - __main__ - INFO - 任务开始于 2024-08-21 10:05:08
+2024-08-21 10:05:08,619 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:05:37,075 - __main__ - INFO - 任务开始于 2024-08-21 10:05:37
+2024-08-21 10:05:37,095 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:07:49,434 - __main__ - INFO - 任务开始于 2024-08-21 10:07:49
+2024-08-21 10:07:49,464 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:09:43,581 - __main__ - INFO - 任务开始于 2024-08-21 10:09:43
+2024-08-21 10:09:43,603 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:10:20,263 - __main__ - INFO - 任务开始于 2024-08-21 10:10:20
+2024-08-21 10:10:20,282 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:11:07,415 - __main__ - INFO - 任务开始于 2024-08-21 10:11:07
+2024-08-21 10:11:07,429 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:12:07,627 - __main__ - INFO - 任务开始于 2024-08-21 10:12:07
+2024-08-21 10:12:07,649 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:13:57,151 - __main__ - INFO - 1任务开始于 2024-08-21 10:13:57
+2024-08-21 10:13:57,171 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:15:33,063 - __main__ - INFO - 任务开始于 2024-08-21 10:15:33
+2024-08-21 10:15:33,085 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:23:54,120 - __main__ - INFO - 任务开始于 2024-08-21 10:23:54
+2024-08-21 10:23:54,134 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:35:14,375 - __main__ - INFO - 任务开始于 2024-08-21 10:35:14
+2024-08-21 10:35:14,395 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:41:44,578 - __main__ - INFO - 任务开始于 2024-08-21 10:41:44
+2024-08-21 10:41:44,595 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 10:56:36,243 - __main__ - INFO - 任务开始于 2024-08-21 10:56:36
+2024-08-21 10:56:36,263 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 11:01:42,684 - __main__ - INFO - 任务开始于 2024-08-21 11:01:42
+2024-08-21 11:01:42,703 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-21 11:10:19,645 - __main__ - INFO - 任务开始于 2024-08-21 11:10:19
+2024-08-21 11:10:19,656 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
+2024-08-23 19:48:23,480 - __main__ - INFO - 任务开始于 2024-08-23 19:48:23
+2024-08-23 19:48:23,504 - kombu.connection - WARNING - No hostname was supplied. Reverting to default 'localhost'
