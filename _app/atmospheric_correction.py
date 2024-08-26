@@ -65,7 +65,7 @@ def atmospheric_correction(date, hour):
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 
-    pois = pd.read_csv('D:/Data20240801/Air_stations_lon_lat.csv', header=None,
+    pois = pd.read_csv('Air_stations_lon_lat.csv', header=None,
                        names=['ID', 'Lon', 'Lat']).values.tolist()
 
     lucc_file = os.path.join(lucc_path, 'H8_LUCC.tif')
