@@ -47,8 +47,6 @@ Configure your celery:
 
 Ensure that the `my_NASA_API_token` file is placed in the root directory of this project. This file must contain your personal Earthdata token, which is required to access NASA's API.
 
----
-
 To obtain your personal token:
 
 1. Log in to your Earthdata account at: [https://urs.earthdata.nasa.gov/profile](https://urs.earthdata.nasa.gov/profile)
