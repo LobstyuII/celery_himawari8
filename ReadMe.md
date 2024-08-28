@@ -35,11 +35,11 @@ Configure your conda environment:
 
 `conda activate celery_env`
 
-Then, run redis.exe:
+Then, run your redis:
 
 `redis-server`
 
-To configure your celery, open a new terminal and run:
+Then, run your celery, open a new terminal and run:
 
 ```
 conda activate celery_env
