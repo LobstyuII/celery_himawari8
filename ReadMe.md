@@ -12,7 +12,7 @@ The repository is configured for use with Conda, ensuring a consistent and repro
 
 · Earthdata token for NASA API
 
-· a JAXA account to access to the P-Tree system
+· JAXA account to access the P-Tree system
 
 ## Installation
 
