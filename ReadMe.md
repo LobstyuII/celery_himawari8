@@ -39,9 +39,14 @@ Then, run redis.exe:
 
 `redis-server`
 
-Configure your celery:
+To configure your celery, open a new terminal and run:
 
-`celery -A celery_app worker --loglevel=info`
+```
+conda activate celery_env
+cd celery_himawari8
+celery -A celery_app worker --loglevel=info
+```
+
 ### 2. Set Up Earthdata Token
 
 Ensure that the `my_NASA_API_token` file is placed in the root directory of this project. This file must contain your personal Earthdata token, which is required to access NASA's API.
