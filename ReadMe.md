@@ -18,11 +18,11 @@ The repository is configured for use with Conda, ensuring a consistent and repro
 
 1. Clone the repository:
 
-`sudo -i`
-
-`git clone https://github.com/LobstyuII/celery_himawari8.git`
-
-`cd celery_himawari8`
+```
+sudo -i
+git clone https://github.com/LobstyuII/celery_himawari8.git
+cd celery_himawari8
+```
 
 2. Create the Conda environment:
 
