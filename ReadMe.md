@@ -18,9 +18,6 @@ The repository is configured for use with Conda, ensuring a consistent and repro
 
 1. Clone the repository:
 
-
-`sudo -i`
-
 ```
 git clone https://github.com/LobstyuII/celery_himawari8.git
 cd celery_himawari8
@@ -73,11 +70,7 @@ python
 
 ## Usage
 
-To initiate the analysis, open a new terminal, 
-
-`sudo -i`
-
-and simply run:
+To initiate the analysis, open a new terminal, and simply run:
 
 ```
 conda activate celery_env
