@@ -12,8 +12,8 @@ logging.basicConfig(filename='main_process.log', level=logging.DEBUG, format='%(
 logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
-    dates_to_process = ['2015-07-13', '2015-07-14', '2015-07-15']
-    hours_to_process = [4, 8, 12]
+    date_str = ['2015-07-13']
+    hour = 4
 
     start_time = time.time()
     logger.info(f"任务开始于 {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
