@@ -12,17 +12,21 @@ The repository is configured for use with Conda, ensuring a consistent and repro
 
 · Earthdata token for NASA API
 
+· a JAXA account to access to the P-Tree system
+
 ## Installation
 
 1. Clone the repository:
 
+`sudo -i`
+
 `git clone https://github.com/LobstyuII/celery_himawari8.git`
 
-`cd celery_himawari8
+`cd celery_himawari8`
 
-2. Create the Conda environment using the provided `environment.yml` file:
+2. Create the Conda environment:
 
-`conda env create -f environment.yml`
+`conda create -n celery_env -c conda-forge celery[redis] redis-py tqdm netCDF4 matplotlib requests Py6S pandas gdal`
 
 ## Configuration
 
@@ -41,14 +45,25 @@ Configure your celery:
 `celery -A celery_app worker --loglevel=info`
 ### 2. Set Up Earthdata Token
 
-Ensure that the `my_NASA_API_token` file is placed in the root directory of this project. This file should contain your personal Earthdata token, necessary for accessing NASA's API.
+Ensure that the `my_NASA_API_token` file is placed in the root directory of this project. This file must contain your personal Earthdata token, which is required to access NASA's API.
 
-### 3. Download Preprocessed Data
+---
 
-Download the preprocessed MCD12Q1 data from the provided Baidu Netdisk(https://pan.baidu.com/s/1bUYW05NnpJ82qdi6Jri2KQ?pwd=i4bu 
-) link and place it in the root directory under `preprocessing_data`. This dataset has been resampled to match the Himawari-8 Full-Disk data.
+To obtain your personal token:
 
-### 4. Update FTP Connection Information
+1. Log in to your Earthdata account at: [https://urs.earthdata.nasa.gov/profile](https://urs.earthdata.nasa.gov/profile)
+   
+2. Navigate to the **Application - Authorized Apps** tab and ensure the following applications are authorized:
+   - **NASA GESDISC DATA ARCHIVE**
+   - **LP DAAC Data Pool**
+
+3. Go to the **Generate Token** tab to create your personal token.
+
+Once you have your token, save it to the appropriate location using the following command:
+
+`echo "your_copied_token_here" > ~/celery_himawari8/my_NASA_API_token`
+
+### 4. Update jaxa FTP Connection Information
 
 Replace the following lines in your configuration with your own FTP credentials:
 
