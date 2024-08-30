@@ -70,6 +70,7 @@ def preprocess_h8_data(file_path, output_dir):
 
 
 def preprocess_h8(date, hour):
+    os.chdir('D:\Users\laobi\PycharmProjects\celery_himawari8')
     file_path = f'downloaded_data/h8l1/himawari_{date.strftime("%Y%m%d")}_{hour:02d}.nc'
     output_dir = f'preprocessing_data/{date.strftime("%Y%m%d")}'
     preprocess_h8_data(file_path, output_dir)

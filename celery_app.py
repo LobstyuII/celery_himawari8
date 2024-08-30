@@ -1,11 +1,16 @@
 from celery import Celery
+import eventlet
+eventlet.monkey_patch()
 
-app = Celery('_app.tasks', broker='redis://127.0.0.1:6379/0', backend='redis://127.0.0.1:6379/0')
+app = Celery('Celery_Himawari8', broker='redis://127.0.0.1:6379/0', backend='redis://127.0.0.1:6379/0')
 # app = Celery('tasks', broker='redis://127.0.0.1:6379/0', backend='redis://127.0.0.1:6379/0')
 app.autodiscover_tasks(['_app.tasks'], force=True)  # 自动发现 _app 包中的任务
 # app.autodiscover_tasks(['_app.tasks'])  # 自动发现 _app 包中的任务
 
+
+
 app.conf.update(
+    worker_concurrency=32,
     task_serializer='json',
     accept_content=['json'],
     result_serializer='json',

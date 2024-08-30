@@ -48,6 +48,7 @@ def process_mod08_data(mod08_file, h8_file, output_dir):
 
 
 def process_mod08(date, hour):
+
     mod08_file = f'downloaded_data/mod08/MOD08_{date.strftime("%Y%m%d")}.hdf'
     h8_file = f'downloaded_data/h8l1/himawari_{date.strftime("%Y%m%d")}_{hour:02d}.nc'
     output_dir = f'preprocessing_data/{date.strftime("%Y%m%d")}'

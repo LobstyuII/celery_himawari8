@@ -12,6 +12,9 @@ from _app.tasks import (
 logging.basicConfig(filename='main_process.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s:%(message)s')
 logger = logging.getLogger(__name__)
 
+## 请在terminal中使用以下代码
+## celery -A celery_app worker --loglevel=info -P eventlet
+
 if __name__ == "__main__":
     date = datetime.date(2015, 7, 15)
     hour = 4
