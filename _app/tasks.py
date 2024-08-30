@@ -28,3 +28,5 @@ def process_mod08_task(mod08_file, h8_file):
 @shared_task
 def atmospheric_correction_task():
     return atmospheric_correction()
+
+

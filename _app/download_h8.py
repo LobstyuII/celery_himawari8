@@ -2,6 +2,7 @@ import os
 import ftplib
 import logging
 from tqdm import tqdm
+import datetime
 
 # 设置日志配置
 logging.basicConfig(filename='h8_download.log', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -67,3 +68,11 @@ def download_himawari_data(date, hour):
     local_filename = f"himawari_{date.strftime('%Y%m%d')}_{hour:02d}.nc"
     download_dir = "downloaded_data/h8l1"
     return download_from_ftp(ftp_path, local_filename, download_dir)
+
+if __name__ == '__main__':
+    date = datetime.date(2015, 7, 15)
+    print("date:", date)
+    date2 = '2015-07-15'
+    print("date2:", date2)
+    hour = 4
+    download_himawari_data(date2, hour)
