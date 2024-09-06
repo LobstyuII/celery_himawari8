@@ -51,8 +51,12 @@ def download_from_ftp(ftp_path, local_filename, download_dir, max_retries=5, ret
                         # 断点续传功能，RETR命令从指定字节位置开始下载
                         ftp.retrbinary(f'RETR {ftp_path}', callback, rest=resume_byte_pos)
 
-            logger.info(f"文件下载成功: {local_filepath}")
-            return local_filepath
+                # 确认下载完成
+                if os.path.getsize(local_filepath) == file_size:
+                    logger.info(f"文件下载成功: {local_filepath}")
+                    return local_filepath
+                else:
+                    raise Exception("下载文件大小不匹配")
 
         except ftplib.all_errors as e:
             logger.error(f"FTP文件下载失败: {e}, 重试 {attempt + 1}/{max_retries}...")
@@ -62,7 +66,7 @@ def download_from_ftp(ftp_path, local_filename, download_dir, max_retries=5, ret
     logger.error(f"文件下载失败: 超过最大重试次数 {max_retries}")
     return None
 
-def download_himawari_data(date, hour):
+def download_himawari_l1(date, hour):
     logger.info(f"开始下载Himawari-8 L1数据 for {date} {hour}:00 UTC")
     ftp_path = f"/jma/netcdf/{date.year:04d}{date.month:02d}/{date.day:02d}/NC_H08_{date.year:04d}{date.month:02d}{date.day:02d}_{hour:02d}00_R21_FLDK.02401_02401.nc"
 
@@ -73,6 +77,7 @@ def download_himawari_data(date, hour):
     return download_from_ftp(ftp_path, local_filename, download_dir)
 
 if __name__ == '__main__':
-    date = datetime.date(2015, 7, 14)
+    date = datetime.date(2015, 7, 15)
     hour = 4
-    download_himawari_data(date, hour)
+    os.chdir('D:\\Users\\laobi\\PycharmProjects\\celery_himawari8')
+    download_himawari_l1(date, hour)
